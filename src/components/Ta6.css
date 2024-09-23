@@ -1,0 +1,17 @@
+.hidden-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visiblity 0s, opacity 0.3s ease-in;
+}
+
+.editable:hover {
+    cursor: pointer;
+    scale: 1.02;
+    opacity: 0.8;
+    transition: scale 0.1s, opacity 0.1s ease-in;
+}
+
+.editable:hover .hidden-content {
+    visibility: visible;
+    opacity: 1;
+}
